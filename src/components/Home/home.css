@@ -1,0 +1,49 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.top-filter-section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.top-filter-section > div {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+.show-button {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bottom-products-and-sidebar {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+.customize-section {
+  width: 500px;
+  box-shadow: 3px 5px 5px grey;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+  padding: 20px;
+}
+
+.customize-section > select {
+  width: 200px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .customize-section {
+    width: 800px;
+  }
+}

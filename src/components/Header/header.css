@@ -1,0 +1,69 @@
+header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+.logo-name {
+  margin-left: 300px;
+}
+CiMenuBurger {
+  display: none;
+}
+.menubar {
+  display: none;
+}
+.logo-image {
+  width: 30px;
+}
+.icon {
+  font-size: 20px;
+}
+.header-top-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container > button {
+  border: none;
+  background-color: transparent;
+}
+.search-input {
+  border: none;
+  font-size: 20px;
+}
+.header-list {
+  display: flex;
+}
+.header-list > li {
+  padding: 20px;
+  list-style-type: none;
+}
+
+header > hr {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .search-input {
+    display: none;
+  }
+  .header-list {
+    display: none;
+  }
+  .menubar {
+    display: inline;
+  }
+  .logo-name {
+    margin-left: 80px;
+  }
+}

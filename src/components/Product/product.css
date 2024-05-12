@@ -1,0 +1,25 @@
+.product-item-container {
+  width: 320px;
+  cursor: pointer;
+  margin: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  list-style: none;
+  background-color: transparent;
+}
+
+.product-item-container > img {
+  width: 100%;
+  aspect-ratio: 0.7;
+}
+
+.product-item-container > input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .product-item-container {
+    width: 160px;
+  }
+}

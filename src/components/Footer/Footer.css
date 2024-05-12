@@ -1,0 +1,50 @@
+footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 60px;
+}
+
+footer > hr {
+  width: 100%;
+  color: #ffffff;
+}
+
+.first-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+  padding-top: 50px;
+}
+
+.second-container {
+  min-height: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-container > div > h3,
+h2,
+p {
+  margin: 5px 0px;
+}
+
+.second-container > div > h2,
+p {
+  margin: 8px 0px;
+}
+
+.copyright {
+  padding: 20px;
+}
+.payments-image {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .first-container,
+  .second-container {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+}
