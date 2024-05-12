@@ -11,8 +11,8 @@ const Footer = () => {
           <h3>BE THE FIRST TO KNOW</h3>
           <p>Sign up for updates from metta mouse </p>
           <div>
-            <input type="text" placeholder="Email" />
-            <button>Subscribe</button>
+            <input type="text" className="email-input" placeholder="Email" />
+            <button className="email-button">Subscribe</button>
           </div>
         </div>
         <div>

@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  min-height: 200vh;
 }
 .top-filter-section {
   padding: 20px;

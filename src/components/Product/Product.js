@@ -11,9 +11,13 @@ const Product = ({ details }) => {
       <p>{title}</p>
       <p>Sign in or create an account to see pricing </p>
       <input id="heart" type="checkbox" />
-      <label htmlFor="heart">
-        <CiHeart />
-      </label>
+
+      <div className="price-favorite">
+        <label htmlFor="heart">
+          <CiHeart />
+        </label>
+        <p>{price}</p>
+      </div>
     </li>
   );
 };

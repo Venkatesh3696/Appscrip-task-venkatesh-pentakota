@@ -3,10 +3,6 @@ import axios from "axios";
 import Product from "../Product/Product";
 import "./home.css";
 
-const initialFilters = {
-  name: "",
-};
-
 const customizeOptions = [
   "All",
   "Option-1",
@@ -17,14 +13,12 @@ const customizeOptions = [
 ];
 
 const Home = () => {
-  const [search, setSearch] = useState("");
   const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [filters, setFilters] = useState(initialFilters);
+
   const [sort, setSort] = useState("recommended");
   const [customize, setCustomize] = useState(false);
 
-  const [showCustomize, setShowCustomize] = useState(true);
+  const [showCustomize, setShowCustomize] = useState(false);
   const fetchProducts = async () => {
     try {
       const response = await axios.get("https://fakestoreapi.com/products");
@@ -39,7 +33,7 @@ const Home = () => {
       const response = await axios.get(
         "https://fakestoreapi.com/products/categories"
       );
-      setCategories(response.data);
+      return response;
     } catch (error) {
       console.log(error);
     }
@@ -71,7 +65,7 @@ const Home = () => {
     return (
       <div className="top-filter-section">
         <div>
-          <p>555 Items</p>
+          <p>{products.length} Items</p>
           <button
             type="button"
             className="show-button"
@@ -136,9 +130,9 @@ const Home = () => {
   useEffect(() => {
     fetchProducts();
     fetchCategories();
-  }, [search]);
+  }, []);
 
-  console.log(products);
+  //   console.log(products);
   return (
     <div>
       <div>

@@ -33,6 +33,28 @@ p {
 p {
   margin: 8px 0px;
 }
+.email-input {
+  background-color: #ffffff;
+  height: 50px;
+  padding: 20px;
+}
+.email-button {
+  height: 50px;
+  margin-left: 30px;
+  background-color: transparent;
+  color: grey;
+  padding: 0px 30px;
+  border: gray 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.first-container > div,
+.second-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+}
 
 .copyright {
   padding: 20px;

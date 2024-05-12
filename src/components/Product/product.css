@@ -17,9 +17,13 @@
 .product-item-container > input[type="checkbox"] {
   display: none;
 }
+.price-favorite {
+  display: flex;
+}
 
 @media screen and (max-width: 768px) {
   .product-item-container {
-    width: 160px;
+    width: 200px;
+    margin: 5px;
   }
 }

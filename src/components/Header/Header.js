@@ -26,7 +26,7 @@ const Header = ({ showCustomize, onclickCustomize }) => {
           </div>
           <MdOutlineFavoriteBorder className="icon" />
           <HiOutlineShoppingBag className="icon" />
-          <select>
+          <select className="lang">
             <option value="English">English</option>
             <option value="Hindi">Hindi</option>
           </select>
@@ -34,12 +34,12 @@ const Header = ({ showCustomize, onclickCustomize }) => {
       </div>
       <nav>
         <ul className="header-list">
-          <li>SHOP</li>
-          <li>SKILLS</li>
-          <li>STORIES</li>
-          <li>ABOUT</li>
-          <li>CONTACT US</li>
-          <li>About</li>
+          <p>SHOP</p>
+          <p>SKILLS</p>
+          <p>STORIES</p>
+          <p>ABOUT</p>
+          <p>CONTACT US</p>
+          <p>About</p>
         </ul>
       </nav>
       <hr />
